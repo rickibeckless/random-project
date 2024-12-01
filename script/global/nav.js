@@ -4,8 +4,7 @@ async function checkIfActive() {
     let path = window.location.pathname;
     let links = document.querySelectorAll('.main-navbar-item a');
     links.forEach(link => {
-        console.log(link.href);
-        if (path === '/') {
+        if (path === '/') { // cause this is the home page
             links[0].classList.add('active');
         } else if (link.href.includes(path)) {
             link.classList.add('active');
