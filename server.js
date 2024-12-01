@@ -7,7 +7,7 @@ import router from './router.js';
 dotenv.config({ path: './.env' });
 
 const PORT = process.env.PORT || 3000;
-const URL = process.env.URL || 'http://localhost:3000';
+const PRO_URL = process.env.PRO_URL || 'http://localhost:3000';
 const app = express();
 
 const __filename = fileURLToPath(import.meta.url);
@@ -20,5 +20,5 @@ app.use(express.static(publicDirectory));
 app.use('/', router);
 
 app.listen(PORT, () => {
-    console.log(`Server is listening on: ${URL}`);
+    console.log(`Server is listening on: ${PRO_URL}`);
 });
