@@ -1,1 +1,4 @@
-/* /index.html 200
+/about       /pages/about.html    200
+/contact     /pages/contact.html  200
+/random-project /pages/random-project.html  200
+/*           /pages/404.html      200
