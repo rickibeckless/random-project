@@ -1,0 +1,159 @@
+[
+    {
+        "id": "promptify",
+        "title": "Promptify",
+        "img_url": "https://i.ibb.co/gR0gFVL/HomePage.jpg",
+        "description": "Promptify is a dynamic writing platform where users can participate in creative writing challenges and prompts. Designed for writers of all skill levels, users can sort challenges by tags such as Beginner, Intermediate, or Advanced based on their preferences. Users can create prompts for short stories or poetry, categorized by skill level and genre. Once a challenge is posted, participants have a set time to submit their responses. During the active period, users can vote on their favorite submissions, and the highest-voted entry is declared the winner.",
+        "authors": [ "Ricki Beckless" ],
+        "skills": [
+            "React",
+            "Node.js",
+            "Express",
+            "JWT",
+            "Bcrypt",
+            "React-Quill",
+            "React-Router",
+            "PostgreSQL",
+            "Railway",
+            "Render"
+        ],
+        "dates": {
+            "start": "October 2024",
+            "end": "November 2024"
+        },
+        "status": "Completed",
+        "links": {
+            "github": "https://github.com/rickibeckless/FinalProject",
+            "live": "https://promptify-ur5z.onrender.com/",
+            "video": "https://youtu.be/DaxxJaa_lGM?si=vJ9iEKEwH74iqqSr",
+            "article": null,
+            "other": null
+        }
+    },
+    {
+        "id": "simmerdeeds",
+        "title": "Simmer Deeds",
+        "img_url": "https://i.ibb.co/YQ0v0LP/short-thumbnail-simmerdeeds.png",
+        "description": "Simmer Deeds is a platform that allows users to upload their favorite YouTubers who make The Sims content (Simmers). This React app utilizes Google's YouTube API to search for YouTubers by name. Users can add Simmers by manually adding their username, image, description (provided by the Simmer), and custom description (provided by the user). Users can also save time by using the Simmer Search to search for the top five YouTubers who match the provided username. Users can select one of the results, which fills out the Add Simmer form with all needed information! Also featured is the ability to give a Plumbob and 'vote' for a Simmer, view an extended version of the Simmer's information in their own custom page, and edit/delete a Simmer and their information.",
+        "authors": [ "Ricki Beckless" ],
+        "skills": [
+            "React",
+            "Netlify",
+            "Supabase",
+            "YouTube API",
+            "React-Router"
+        ],
+        "dates": {
+            "start": "June 2024",
+            "end": "July 2024"
+        },
+        "status": "Completed",
+        "links": {
+            "github": "https://github.com/rickibeckless/Simmer-Deeds",
+            "live": "https://simmerdeeds.netlify.app/",
+            "video": "https://youtu.be/gq5GureKfos?si=9L9F0zSkdD-8nT4k",
+            "article": null,
+            "other": "https://youtube.com/shorts/cLk2DPJBzYU?si=Fk7mm96XpKVHwZLz"
+        }
+    },
+    {
+        "id": "studygo",
+        "title": "StudyGo",
+        "img_url": "https://i.ibb.co/VmyDfVQ/Study-Go-Img.png",
+        "description": "StudyGo v3 is a web app designed to help users efficiently explore subjects, classes, and units within an educational framework. It utilizes a PostgreSQL database for structured data management, ensuring that all information is well-organized. Built with React, the app provides a straightforward interface that allows users to click on a subject to reveal related classes, and further expand to see associated units. Each detail page has its own unique URL for easy navigation.",
+        "authors": [ "Ricki Beckless" ],
+        "skills": [
+            "React",
+            "Node.js",
+            "Express",
+            "React-Quill",
+            "React-Router",
+            "PostgreSQL",
+            "Railway"
+        ],
+        "dates": {
+            "start": "October 2024",
+            "end": "October 2024"
+        },
+        "status": "In-Progress",
+        "links": {
+            "github": "https://github.com/rickibeckless/StudyGo_V3",
+            "live": null,
+            "video": null,
+            "article": null,
+            "other": null
+        }
+    },
+    {
+        "id": "watchstatexplorer",
+        "title": "Watch Stat Explorer",
+        "img_url": "https://i.ibb.co/KFY6PQY/Watch-Stat-Explorer-Img.png",
+        "description": "Application created as a project of CodePath's WEB102 unit five assignment. This application aims to allow users to search for a movie (or select one from a list of recommendations) which prompts the app to fetch movie information. Information fetched should (with allowance of modification based on API parameters) include title, poster, description, people involved, release information, reviews, and ratings.",
+        "authors": [ "Ricki Beckless" ],
+        "skills": [
+            "React",
+            "React-Router",
+            "Supabase",
+            "The Movie Database API"
+        ],
+        "dates": {
+            "start": "March 2024",
+            "end": "April 2024"
+        },
+        "status": "Completed",
+        "links": {
+            "github": "https://github.com/rickibeckless/Data-Dashboard",
+            "live": null,
+            "video": null,
+            "article": null,
+            "other": null
+        }
+    },
+    {
+        "id": "symptomlogger",
+        "title": "Symptom Logger",
+        "img_url": "https://i.ibb.co/m4H4G6M/Symptom-Logger-Img.png",
+        "description": "The Symptom Logger is a web application designed to help users monitor and manage their health by tracking symptoms, behaviors, and concerns over time. Users can log new symptoms, update existing entries, and view a comprehensive list of their health data.",
+        "authors": [ "Ricki Beckless" ],
+        "skills": [
+            "React",
+            "React-Router",
+            "Supabase"
+        ],
+        "dates": {
+            "start": "April 2024",
+            "end": "April 2024"
+        },
+        "status": "Completed",
+        "links": {
+            "github": "https://github.com/rickibeckless/Symptom-Logger",
+            "live": null,
+            "video": null,
+            "article": null,
+            "other": null
+        }
+    },
+    {
+        "id": "englishcompiportfolio",
+        "title": "English Comp Portfolio",
+        "img_url": "https://i.ibb.co/nzHtD5n/rw-Screen-Shot.png",
+        "description": "A portfolio application created for English Composition I. This project showcases Fall 2023 assignments, including essays, reflections, and other written works.",
+        "authors": [ "Ricki Beckless" ],
+        "skills": [
+            "Node.js",
+            "Express"
+        ],
+        "dates": {
+            "start": "September 2023",
+            "end": "September 2023"
+        },
+        "status": "Completed",
+        "links": {
+            "github": "https://github.com/rickibeckless/EnglishCompI-PortfolioApp",
+            "live": "https://rickis-writings.fly.dev/",
+            "video": null,
+            "article": null,
+            "other": null
+        }
+    }
+]

@@ -1,0 +1,7 @@
+#main-body {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    padding: var(--spacing-lg) var(--spacing-md);
+
+    min-height: calc(100dvh - calc(var(--height-header) + var(--height-footer)));
+}
