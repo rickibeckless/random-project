@@ -58,7 +58,7 @@
         cursor: pointer;
         transition: all var(--transition-f) ease-in-out;
 
-        &:hover {
+        &:hover, &:focus, &:active {
             background-color: var(--color-text);
             color: var(--secondary-color-background);
         }

@@ -45,7 +45,7 @@ const createProjectCard = (project) => {
     projectCard.classList.add('project-card');
     projectCard.id = project.id;
     projectCard.innerHTML = `
-        <div class="project-image-container">
+        <div class="project-image-container" tabIndex="0">
             <img class="project-image" src="${project.img_url}" alt="${project.title}"></img>
         </div>
         <h3 class="project-title">${project.title}</h3>
@@ -58,7 +58,7 @@ const createProjectCard = (project) => {
         </div>
         <span class="project-status">${project.status}</span>
         <div class="project-content">
-            <p class="project-description">${project.description}</p>
+            <p class="project-description" tabIndex="0">${project.description}</p>
             <p class="project-author">${project.authors.join(', ')}</p>
         </div>
         <div class="project-links">

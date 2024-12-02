@@ -21,7 +21,7 @@
         padding: var(--spacing-xxs);
         transition: transform var(--transition-f) ease;
 
-        &:hover {
+        &:hover, &:focus, &:active {
             transform: scale(1.1);
         }
 
@@ -57,7 +57,7 @@
             border-bottom: 2px solid var(--color-text);
         }
 
-        &:hover {
+        &:hover, &:focus, &:active {
             color: var(--secondary-color-background);
             background-color: var(--color-text);
         }

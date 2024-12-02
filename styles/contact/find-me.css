@@ -45,7 +45,8 @@
     font-size: 1rem;
 }
 
-.find-me-links-description:hover {
+.find-me-links-description:hover,
+.find-me-links-description:focus {
     font-weight: 600;
 }
 

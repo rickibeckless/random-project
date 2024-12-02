@@ -28,7 +28,9 @@
     transition: all var(--transition-f) ease-in-out;
 }
 
-.project-image-container:hover {
+.project-image-container:hover,
+.project-image-container:focus,
+.project-image-container:active {
     box-shadow: var(--box-shadow-lg);
     height: unset;
     overflow: unset;
@@ -99,7 +101,9 @@
     cursor: pointer;
 }
 
-.project-description:hover {
+.project-description:hover,
+.project-description:focus,
+.project-description:active {
     -webkit-line-clamp: unset;
     line-clamp: unset;
     overflow: visible;
@@ -128,7 +132,9 @@
     color: var(--color-text);
 }
 
-.project-link:hover {
+.project-link:hover,
+.project-link:focus,
+.project-link:active {
     background-color: var(--color-text);
     color: var(--secondary-color-background);
 }
