@@ -120,9 +120,9 @@
     font-size: 1rem;
     padding: .5vw 1vw;
 
-    z-index: 2;
+    z-index: var(--z-index-h);
 }
 
 #w-section-name {
-    color: #ff0000;
+    color: var(--color-candy-red);
 }

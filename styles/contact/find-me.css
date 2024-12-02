@@ -11,18 +11,30 @@
     justify-items: center;
     align-items: center;
 
-    border-radius: 20px;
+    border-radius: var(--border-radius-xl);
 }
 
 .find-me-links-brand {
     font-size: 8rem;
-    color: #231a20;
-    transition: font-size .5s ease-out;
 }
 
-.find-me-links-brand:hover {
-    color: #823e6a;
-    font-size: 7rem;
+.find-me-links-brand,
+.find-me-links-description {
+    color: var(--color-text);
+    transition: all var(--transition-f) ease;
+    text-decoration: none;
+}
+
+.find-me-links-brand:hover,
+.find-me-links-brand:focus,
+.find-me-links-brand:active,
+.find-me-links-description:hover,
+.find-me-links-description:focus,
+.find-me-links-description:active {
+    background-color: var(--color-text);
+    color: var(--secondary-color-background);
+    padding: var(--spacing-sm);
+    border-radius: var(--border-radius-md);
 }
 
 .find-me-links-header {
@@ -30,15 +42,10 @@
 }
 
 .find-me-links-description {
-    color: #231a20;
-    text-decoration: none;
     font-size: 1rem;
-    transition: font-size .5s ease-out;
 }
 
 .find-me-links-description:hover {
-    color: #823e6a;
-    font-size: 1.2rem;
     font-weight: 600;
 }
 
