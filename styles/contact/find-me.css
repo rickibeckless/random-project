@@ -1,0 +1,60 @@
+#find-me-social-holder {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10vw;
+
+    width: 100%;
+}
+
+.find-me-social {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+
+    border-radius: 20px;
+}
+
+.find-me-links-brand {
+    font-size: 8rem;
+    color: #231a20;
+    transition: font-size .5s ease-out;
+}
+
+.find-me-links-brand:hover {
+    color: #823e6a;
+    font-size: 7rem;
+}
+
+.find-me-links-header {
+    font-size: 1.2rem;
+}
+
+.find-me-links-description {
+    color: #231a20;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: font-size .5s ease-out;
+}
+
+.find-me-links-description:hover {
+    color: #823e6a;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+@media(max-width: 800px) {
+    #find-me-social-holder, #project-tile-holder {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .find-me-social {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: flex-start;
+        justify-content: flex-start;
+        width: min-content;
+    }
+}

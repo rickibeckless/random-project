@@ -20,6 +20,10 @@ router.get('/random-project', (req, res) => {
     res.sendFile(path.join(publicDirectory, 'pages/random-project.html'));
 });
 
+router.get('/current-dos', (req, res) => {
+    res.sendFile(path.join(publicDirectory, 'pages/current-dos.html'));
+});
+
 router.get('*', (req, res) => {
     res.sendFile(path.join(publicDirectory, 'pages/404.html'));
 });

@@ -1,16 +1,15 @@
 #main-header {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
-    padding: var(--spacing-md) var(--spacing-lg);
-    background-color: var(--secondary-color-background);
     color: var(--color-text);
 
     position: sticky;
     top: 0;
     z-index: var(--z-index-md);
     
-    height: var(--height-header);
+    padding: 1vw 2vw 0;
+    height: fit-content;
 
     & #theme-toggle {
         cursor: pointer;
@@ -36,15 +35,15 @@
     }
 }
 
-#main-navbar {
-    width: 60%;
-}
-
 #main-navbar-list {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     gap: var(--spacing-md);
+
+    background-color: var(--secondary-color-background);
+    border-radius: 25px;
+    padding: var(--spacing-sm);
 
     list-style: none;
 
@@ -63,4 +62,67 @@
             background-color: var(--color-text);
         }
     }
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--color-text);
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: .5vw 1vw;
+}
+
+/* WELCOME SECTION STYLES */
+#welcome-section {
+    height: 100dvh;
+    color: var(--color-text);
+    text-transform: lowercase;
+    letter-spacing: 5px;
+
+    display: flex;
+    flex-flow: column wrap; /* flex-direction: column; flex-wrap: wrap; */
+    place-content: flex-end; /* align-content: flex-end; justify-content: flex-end; */
+    align-items: flex-end;
+
+    margin: calc(-6vh - 2vw) 2vw 0;
+    padding-top: 0;
+}
+
+#welcome-section.active-section {
+    background-color: transparent;
+}
+
+#welcome-section.stationary {
+    height: min-content;
+}
+
+#w-section-introduction {
+    font-size: 2rem;
+    transform: translate(-10%, -10%);
+    transition: transform 1.5s ease;
+    padding: 0;
+}
+
+#w-section-sub-intro {
+    padding-bottom: 1vw;
+}
+
+/* sticky welcome section styles */
+#w-section-introduction.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(2.1vw, 2.2vh);
+    transition: transform 1.5s ease;
+
+    background-color: var(--secondary-color-background);
+    border-radius: 25px;
+    font-size: 1rem;
+    padding: .5vw 1vw;
+
+    z-index: 2;
+}
+
+#w-section-name {
+    color: #ff0000;
 }

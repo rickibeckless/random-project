@@ -72,16 +72,6 @@ const createProjectCard = (project) => {
     return projectCard;
 };
 
-const handleSeeFullDescription = () => {
-    console.log('handleSeeFullDescription');
-    const projectCard = document.querySelectorAll('.project-card');
-    projectCard.forEach(card => {
-        card.addEventListener('click', () => {
-            console.log(card);
-        });
-    });
-};
-
 const setProjectFilters = async () => {
     let projects = await fetchProjects();
 
@@ -157,5 +147,4 @@ const setProjectFilters = async () => {
 
 handleRandomProject();
 handleSeeAllProjects();
-handleSeeFullDescription();
 //setProjectFilters();

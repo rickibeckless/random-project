@@ -7,26 +7,62 @@
         <link rel="icon" type="image/png" sizes="32x32" href="./../assets/favicon/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="./../assets/favicon/favicon-16x16.png">
         <link rel="manifest" href="./../assets/favicon/site.webmanifest">
-        <title>Contact | Final Project</title> <!-- Change the title of the page to appropriate name -->
+        <title>find ricki.</title> <!-- Change the title of the page to appropriate name -->
         <link rel="stylesheet" href="../styles/global/styles.css"> <!-- Link the global css stylesheet to each html page (modify path as needed Ricki!!) -->
+        <link rel="stylesheet" href="../styles/contact/find-me.css">
+        <script src="https://kit.fontawesome.com/6fdb255b28.js" crossorigin="anonymous"></script>
         <script src="../script/global/main.js" defer></script> <!-- Link the global js script to each html page -->
         <script src="../script/global/nav.js" defer></script> <!-- Link the global js script to each html page -->
     </head>
     <body id="page2"> <!-- Add an id attribute to the body element. -->
         <header id="main-header">
-            <h1 id="main-navbar-heading">Final Project</h1>
+            <section id="welcome-section" class="stationary">
+                <a href="/" id="w-section-introduction" class="main-navbar-item nav-link sticky"><h1>Hello, I'm <span id="w-section-name">Ricki</span>.</h1></a>
+            </section>
             <nav id="main-navbar">
                 <ul id="main-navbar-list">
-                    <li class="main-navbar-item"><a href="/">Home</a></li>
                     <li class="main-navbar-item"><a href="/about">About</a></li>
                     <li class="main-navbar-item"><a href="/contact">Contact</a></li>
                     <li class="main-navbar-item"><a href="/random-project">Random Project</a></li>
+                    <li class="main-navbar-item"><a href="/current-dos">Current Dos</a></li>
                 </ul>
             </nav>
         </header>
 
         <main id="main-body">
-            <h2>Contact</h2>
+            <section id="find-me">
+                <h2 class="section-header">Find Me</h2>
+                <div id="find-me-social-holder" class="section-div">
+                    <div class="find-me-social">
+                        <a href="https://github.com/rickibeckless" class="find-me-links" target="_blank" rel="noopener nofollow noreferrer" title="Ricki Beckless GitHub">
+                            <i class="fa-brands fa-square-github find-me-links-brand"></i>
+                        </a>
+                        <h3 class="find-me-links-header">GitHub</h3>
+                        <a href="https://github.com/rickibeckless" class="find-me-links-description">https://github.com/rickibeckless</a>
+                    </div>
+                    <div class="find-me-social">
+                        <a href="https://www.linkedin.com/in/ricki-beckless" class="find-me-links" target="_blank" rel="noopener nofollow noreferrer" title="Ricki Beckless LinkedIn">
+                            <i class="fa-brands fa-linkedin find-me-links-brand"></i>
+                        </a>
+                        <h3 class="find-me-links-header">LinkedIn</h3>
+                        <a href="https://www.linkedin.com/in/ricki-beckless" class="find-me-links-description">https://www.linkedin.com/in/ricki-beckless</a>
+                    </div>
+                    <div class="find-me-social">
+                        <a href="https://codepen.io/rickibeckless" class="find-me-links" target="_blank" rel="noopener nofollow noreferrer" title="Ricki Beckless CodePen">
+                            <i class="fa-brands fa-codepen find-me-links-brand"></i>
+                        </a>
+                        <h3 class="find-me-links-header">CodePen</h3>
+                        <a href="https://codepen.io/rickibeckless" class="find-me-links-description">https://codepen.io/rickibeckless</a>
+                    </div>
+                    <div class="find-me-social">
+                        <a href="https://www.freecodecamp.org/rickibeckless" id="profile-link" class="find-me-links" target="_blank" rel="noopener nofollow noreferrer" title="Ricki Beckless FreeCodeCamp">
+                            <i class="fa-brands fa-free-code-camp find-me-links-brand"></i>
+                        </a>
+                        <h3 class="find-me-links-header">freeCodeCamp</h3>
+                        <a href="https://www.freecodecamp.org/rickibeckless" class="find-me-links-description">https://www.freecodecamp.org/rickibeckless</a>
+                    </div>
+                </div>
+            </section>
         </main>
 
         <footer id="main-footer">
