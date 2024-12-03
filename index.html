@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="./styles/global/styles.css"> <!-- Link the global css stylesheet to each html page (modify path as needed Ricki!!) -->
         <link rel="stylesheet" href="./styles/home/styles.css">
         <script src="./script/home/main.js" defer></script>
+        <script src="./script/home/randomQuotes.js" defer></script>
         <script src="./script/global/main.js" defer></script> <!-- Link the global js script to each html page -->
         <script src="./script/global/nav.js" defer></script> <!-- Link the global js script to each html page -->
     </head>
@@ -31,7 +32,30 @@
             <h3 id="w-section-sub-intro">Welcome to my <span id="w-section-sub-intro-fancy">showcase</span>.</h3>
         </section>
 
-        <!-- <main id="main-body"></main> -->
+        <main id="main-body">
+            <aside id="home-welcome">
+                <h4>Get a:</h4>
+                <div id="home-welcome-btns-holder">
+                    <button type="button" id="rand-affirmation-btn">Affirmation</button>
+                    <button type="button" id="rand-quote-btn">Quote</button>
+                </div>
+                <section id="rand-card-section"></section>
+            </aside>
+            
+            <a id="more-btn" class="active nav-link" href="#all" title="see more">
+                <div id="arrow-1" class="more-arrow"></div>
+                <div id="arrow-2" class="more-arrow"></div>
+                <div id="arrow-3" class="more-arrow"></div>
+            </a>
+
+            <section id="all">
+                <p>Here you can get all affirmations or all quotes!</p>
+                <div id="all-btns-holder">
+                    <button type="button" id="all-affirmations-btn">Affirmations</button>
+                    <button type="button" id="all-quotes-btn">Quotes</button>
+                </div>
+            </section>
+        </main>
 
         <footer id="main-footer">
             <p id="footer-cr-statement">

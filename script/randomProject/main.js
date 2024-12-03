@@ -4,10 +4,16 @@ let projectFilters = {
     links: []
 };
 
-async function getRandomProject() {
-  const projects = await fetchProjects();
-  const randomIndex = Math.floor(Math.random() * projects.length);
-  return projects[randomIndex];
+async function getRandomProject(projectId) {
+    const projects = await fetchProjects();
+    const randomIndex = Math.floor(Math.random() * projects.length);
+    if (projectId && projects.length > 1) {
+        if (projects[randomIndex].id === projectId) {
+            return getRandomProject(projectId);
+        };
+    };
+    
+    return projects[randomIndex];
 };
 
 async function fetchProjects() {
@@ -19,7 +25,12 @@ async function fetchProjects() {
 const handleRandomProject = async () => {
     const randomButton = document.getElementById('rand-project-btn');
     randomButton.addEventListener('click', async () => {
-        const project = await getRandomProject();
+        const currentProject = document.querySelector('.project-card');
+        let projectId;
+        if (currentProject) {
+            projectId = currentProject.dataset.id;
+        }
+        const project = await getRandomProject(projectId);
         const projectContainer = document.getElementById('random-project-section');
         const projectCard = createProjectCard(project);
         projectContainer.innerHTML = '';
@@ -43,7 +54,7 @@ const handleSeeAllProjects = async () => {
 const createProjectCard = (project) => {
     const projectCard = document.createElement('div');
     projectCard.classList.add('project-card');
-    projectCard.id = project.id;
+    projectCard.dataset.id = project.id;
     projectCard.innerHTML = `
         <div class="project-image-container" tabIndex="0">
             <img class="project-image" src="${project.img_url}" alt="${project.title}"></img>

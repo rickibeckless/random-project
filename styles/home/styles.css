@@ -1,0 +1,100 @@
+#home-welcome {
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#home-welcome.active {
+
+}
+
+#home-welcome-btns-holder {
+
+}
+
+#home-welcome-btns-holder button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--secondary-color-background);
+    color: var(--color-text);
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+#home-welcome-btns-holder button:hover {
+    background-color: var(--color-text);
+    color: var(--secondary-color-background);
+}
+
+#more-btn {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    background: none;
+    border: none;
+}
+
+#more-btn.active {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    gap: 1rem;
+    transform: translateX(-50%);
+    width: 100%;
+    height: max-content;
+}
+
+#more-btn.active .more-arrow {
+    z-index: var(--z-index-xs);
+    clip-path: polygon(50% 50%, 50% 58.25%, 80.75% 21.5%, 50% 46.88%, 19.25% 21.5%, 50% 58.25%);
+    background-color: var(--color-text);
+    color: var(--secondary-color-background);
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+    animation: fadeInOut 2s ease-in-out infinite;
+}
+
+#more-btn.active .more-arrow#arrow-1 {
+    animation-delay: 0s;
+    --scale: 5.1;
+    transform: var(--scale);
+    background-color: var(--color-dark-purple);
+}
+
+#more-btn.active .more-arrow#arrow-2 {
+    animation-delay: 0.2s;
+    --scale: 3.1;
+    transform: var(--scale);
+    background-color: var(--color-brown-silver);
+}
+
+#more-btn.active .more-arrow#arrow-3 {
+    animation-delay: 0.4s;
+    --scale: 2.1;
+    transform: var(--scale);
+    background-color: var(--color-french-gray);
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+        transform: translateY(0) scale(var(--scale, 1));
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(10px) scale(var(--scale, 1));
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(20px) scale(var(--scale, 1));
+    }
+}
