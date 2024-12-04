@@ -1,3 +1,23 @@
+#welcome-section #w-section-introduction,
+#welcome-section #w-section-sub-intro {
+    background-color: #241c2433;
+    padding: var(--spacing-xs);
+    border-radius: var(--border-radius-md);
+}
+
+#welcome-section #w-section-introduction.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(2.1vw, 2.2vh);
+    transition: transform 1.5s ease;
+    background-color: var(--secondary-color-background);
+    border-radius: 25px;
+    font-size: 1rem;
+    padding: .5vw 1vw;
+    z-index: var(--z-index-h);
+}
+
 #home-welcome {
     position: absolute;
     bottom: 50%;
@@ -8,15 +28,14 @@
     align-items: center;
 }
 
-#home-welcome.active {
-
+#home-welcome h4 {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text);
+    font-variant: small-caps;
 }
 
-#home-welcome-btns-holder {
-
-}
-
-#home-welcome-btns-holder button {
+#home button {
     margin: 10px;
     padding: 10px 20px;
     border: none;
@@ -27,7 +46,7 @@
     cursor: pointer;
 }
 
-#home-welcome-btns-holder button:hover {
+#home button:hover {
     background-color: var(--color-text);
     color: var(--secondary-color-background);
 }
@@ -46,7 +65,7 @@
     position: absolute;
     bottom: 0;
     left: 50%;
-    gap: 1rem;
+    gap: var(--spacing-sm);
     transform: translateX(-50%);
     width: 100%;
     height: max-content;
@@ -67,21 +86,21 @@
     animation-delay: 0s;
     --scale: 5.1;
     transform: var(--scale);
-    background-color: var(--color-dark-purple);
+    background-color: #2101246b;
 }
 
 #more-btn.active .more-arrow#arrow-2 {
     animation-delay: 0.2s;
     --scale: 3.1;
     transform: var(--scale);
-    background-color: var(--color-brown-silver);
+    background-color: #a5a2996b;
 }
 
 #more-btn.active .more-arrow#arrow-3 {
     animation-delay: 0.4s;
     --scale: 2.1;
     transform: var(--scale);
-    background-color: var(--color-french-gray);
+    background-color: #b4b8c56b;
 }
 
 @keyframes fadeInOut {

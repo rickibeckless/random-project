@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // welcome transformation
     const welcomeIntro = document.getElementById('w-section-introduction');
     const welcomeContent = document.getElementById('welcome-section');
+    const moreButton = document.getElementById('more-btn');
 
     window.addEventListener('scroll', function () {
         const scrollPosition = window.scrollY + (window.innerHeight * 0.2);
@@ -13,8 +14,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
         if (scrollPosition >= threshold && scrollPosition >= topThreshold) {
             welcomeIntro.classList.add('sticky');
+            moreButton.classList.remove('active');
         } else {
             welcomeIntro.classList.remove('sticky');
+            moreButton.classList.add('active');
         };
     });
 

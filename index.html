@@ -10,6 +10,7 @@
         <title>ricki.</title> <!-- Change the title of the page to appropriate name -->
         <link rel="stylesheet" href="./styles/global/styles.css"> <!-- Link the global css stylesheet to each html page (modify path as needed Ricki!!) -->
         <link rel="stylesheet" href="./styles/home/styles.css">
+        <link rel="stylesheet" href="./styles/home/card.css">
         <script src="./script/home/main.js" defer></script>
         <script src="./script/home/randomQuotes.js" defer></script>
         <script src="./script/global/main.js" defer></script> <!-- Link the global js script to each html page -->
@@ -34,7 +35,7 @@
 
         <main id="main-body">
             <aside id="home-welcome">
-                <h4>Get a:</h4>
+                <h4>Random:</h4>
                 <div id="home-welcome-btns-holder">
                     <button type="button" id="rand-affirmation-btn">Affirmation</button>
                     <button type="button" id="rand-quote-btn">Quote</button>
@@ -49,11 +50,13 @@
             </a>
 
             <section id="all">
-                <p>Here you can get all affirmations or all quotes!</p>
+                <p>Here you can get all affirmations or quotes!</p>
                 <div id="all-btns-holder">
                     <button type="button" id="all-affirmations-btn">Affirmations</button>
                     <button type="button" id="all-quotes-btn">Quotes</button>
                 </div>
+
+                <section id="all-cards-section"></section>
             </section>
         </main>
 

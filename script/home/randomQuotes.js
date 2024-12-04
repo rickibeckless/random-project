@@ -4,6 +4,12 @@ async function fetchQuotes() {
     return data;
 };
 
+async function fetchAffirmations() {
+    const response = await fetch('../script/home/affirmations.json');
+    const data = await response.json();
+    return data;
+};
+
 async function fetchRandomQuote(quoteId) {
     const quotes = await fetchQuotes();
     const randomIndex = Math.floor(Math.random() * quotes.length);
@@ -14,12 +20,6 @@ async function fetchRandomQuote(quoteId) {
     };
 
     return quotes[randomIndex];
-};
-
-async function fetchAffirmations() {
-    const response = await fetch('../script/home/affirmations.json');
-    const data = await response.json();
-    return data;
 };
 
 async function fetchRandomAffirmation(affirmationId) {
@@ -38,9 +38,10 @@ const createRandomCard = (random) => {
     const randomCard = document.createElement('div');
     randomCard.classList.add('random-card');
     randomCard.dataset.id = random.id;
+    const authorSearch = random.author?.replace(/\s/g, '+');
     randomCard.innerHTML = `
         <p class="random-content">${random.content}</p>
-        ${random.author ? `<span class="random-author">${random.author}</span>` : ''}
+        ${random.author ? `<a href="https://www.google.com/search?q=${authorSearch}" target="_blank" class="random-author">${random.author}</a>` : ''}
     `;
 
     return randomCard;
@@ -78,13 +79,45 @@ const handleRandomAffirmation = async () => {
     });
 };
 
+const handleAllQuotes = async () => {
+    const allQuotesButton = document.getElementById('all-quotes-btn');
+
+    allQuotesButton.addEventListener('click', async () => {
+        const allQuotes = await fetchQuotes();
+        const allCardsContainer = document.getElementById('all-cards-section');
+        allCardsContainer.innerHTML = '';
+        allQuotes.forEach((quote) => {
+            const quoteCard = createRandomCard(quote);
+            allCardsContainer.appendChild(quoteCard);
+        });
+    });
+};
+
+const handleAllAffirmations = async () => {
+    const allAffirmationsButton = document.getElementById('all-affirmations-btn');
+
+    allAffirmationsButton.addEventListener('click', async () => {
+        const allAffirmations = await fetchAffirmations();
+        const allCardsContainer = document.getElementById('all-cards-section');
+        allCardsContainer.innerHTML = '';
+        allAffirmations.forEach((affirmation) => {
+            const affirmationCard = createRandomCard(affirmation);
+            allCardsContainer.appendChild(affirmationCard);
+        });
+    });
+};
+
 const onLoadQuote = () => {
     const quoteButton = document.getElementById('rand-quote-btn');
     quoteButton.click();
-}
+};
 
 document.addEventListener('DOMContentLoaded', function () {
     handleRandomQuote();
     handleRandomAffirmation();
+
+    handleAllQuotes();
+    handleAllAffirmations();
+
     onLoadQuote();
 });

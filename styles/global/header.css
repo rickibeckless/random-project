@@ -74,14 +74,14 @@
 
 /* WELCOME SECTION STYLES */
 #welcome-section {
-    height: 100dvh;
+    height: 95dvh;
     color: var(--color-text);
     text-transform: lowercase;
     letter-spacing: 5px;
 
     display: flex;
-    flex-flow: column wrap; /* flex-direction: column; flex-wrap: wrap; */
-    place-content: flex-end; /* align-content: flex-end; justify-content: flex-end; */
+    flex-flow: column wrap;
+    place-content: flex-end;
     align-items: flex-end;
 
     margin: calc(-6vh - 2vw) 2vw 0;

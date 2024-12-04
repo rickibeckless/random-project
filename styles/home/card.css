@@ -1,0 +1,55 @@
+#rand-card-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.random-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: var(--spacing-md);
+    margin: var(--spacing-md);
+    background-color: var(--secondary-color-background);
+    border: 1px solid var(--color-french-gray);
+    border-radius: var(--border-radius-sm);
+    box-shadow: var(--box-shadow-md);
+}
+
+.random-card .random-content {
+    
+}
+
+.random-card .random-author {
+    font-variant: small-caps;
+    display: block;
+    margin-left: auto;
+    font-size: var(--font-size-md);
+    color: var(--color-text);
+    text-decoration: none;
+    font-style: italic;
+    transition: all var(--transition-xf) ease;
+}
+
+.random-card .random-author:hover,
+.random-card .random-author:focus,
+.random-card .random-author:active {
+    text-decoration: underline;
+    letter-spacing: 1.5px;
+}
+
+#rand-card-section .random-card {
+    padding: var(--spacing-sm);
+    margin: var(--spacing-xs);
+    width: 40vw;
+}
+
+#all-cards-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30vw, 1fr));
+    gap: var(--spacing-md);
+    padding: var(--spacing-md);
+}
