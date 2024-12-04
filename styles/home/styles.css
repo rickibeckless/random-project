@@ -117,3 +117,11 @@
         transform: translateY(20px) scale(var(--scale, 1));
     }
 }
+
+#main-body #all-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-md);
+    padding: var(--spacing-md);
+}
