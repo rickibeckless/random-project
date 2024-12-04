@@ -125,3 +125,9 @@
     gap: var(--spacing-md);
     padding: var(--spacing-md);
 }
+
+#main-body #all-intro h4 {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+    font-variant: small-caps;
+}
