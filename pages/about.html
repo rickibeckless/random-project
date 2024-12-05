@@ -10,6 +10,7 @@
         <title>about ricki.</title> <!-- Change the title of the page to appropriate name -->
         <link rel="stylesheet" href="./../styles/global/styles.css"> <!-- Link the global css stylesheet to each html page (modify path as needed Ricki!!) -->
         <link rel="stylesheet" href="./../styles/about/styles.css">
+        <script src="https://kit.fontawesome.com/6fdb255b28.js" crossorigin="anonymous"></script>
         <script src="./../script/global/main.js" defer></script> <!-- Link the global js script to each html page -->
         <script src="./../script/global/nav.js" defer></script> <!-- Link the global js script to each html page -->
         <script src="./../script/about/main.js" defer></script>
@@ -31,17 +32,135 @@
         </header>
         
         <main id="main-body">
-            <div id="about-header">
+            <section id="about-header">
                 <h2>about ricki.</h2>
                 <p>Here is a little bit about me.</p>
-            </div>
+            </section>
  
-            <div id="about-paragraphs-holder" class="section-div">
-                <div class="about-paragraph">
-                    <p>hi. i'm ricki.</p>
-                    <p>i am a <span id="i-am">web developer</span></p>
+            <section id="about-welcome">
+                <p>hi. i'm ricki.</p>
+                <p>i am a <span id="i-am">web developer</span></p>
+            </section>
+
+            <section id="about-skills-section">
+                <h3>
+                    skills
+                    <span id="about-skills-dropdown" class="dropdown-caret">
+                        <i class="fa-solid fa-caret-down"></i>
+                    </span>
+                </h3>
+
+                <div class="about-skills-holder">
+                    <h4>
+                        Languages
+                        <span class="about-skills-holder-dropdown dropdown-caret">
+                            <i class="fa-solid fa-caret-down"></i>
+                        </span>
+                    </h4>
+
+                    <ul class="about-skills-list">
+                        <li class="about-skill">HTML</li>
+                        <li class="about-skill">CSS</li>
+                        <li class="about-skill">JavaScript</li>
+                        <li class="about-skill">React</li>
+                        <li class="about-skill">Node.js</li>
+                        <li class="about-skill">Express</li>
+                        <li class="about-skill">MongoDB</li>
+                        <li class="about-skill">PostgreSQL</li>
+                    </ul>
                 </div>
-            </div>
+
+                <div class="about-skills-holder">
+                    <h4>
+                        Tools
+                        <span class="about-skills-holder-dropdown dropdown-caret">
+                            <i class="fa-solid fa-caret-down"></i>
+                        </span>
+                    </h4>
+
+                    <ul class="about-skills-list">
+                        <li class="about-skill-header">Version Control
+                            <li class="about-skill">Git</li>
+                            <li class="about-skill">GitHub</li>
+                        </li>
+
+                        <li class="about-skill-header">Development
+                            <li class="about-skill">VS Code</li>
+                            <li class="about-skill">Postman</li>
+                        </li>
+
+                        <li class="about-skill-header">Deployment
+                            <li class="about-skill">Heroku</li>
+                            <li class="about-skill">Netlify</li>
+                            <li class="about-skill">Vercel</li>
+                            <li class="about-skill">Render</li>
+                        </li>
+
+                        <li class="about-skill-header">Other
+                            <li class="about-skill">Google Cloud Platform</li>
+                            <li class="about-skill">Figma</li>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="about-skills-holder">
+                    <h4>
+                        Techniques
+                        <span class="about-skills-holder-dropdown dropdown-caret">
+                            <i class="fa-solid fa-caret-down"></i>
+                        </span>
+                    </h4>
+
+                    <ul class="about-skills-list">
+                        <li class="about-skill">Responsive Design</li>
+                        <li class="about-skill">Progressive Web Apps</li>
+                        <li class="about-skill">Single Page Applications</li>
+                        <li class="about-skill">Server Side Rendering</li>
+                        <li class="about-skill">RESTful APIs</li>
+                        <li class="about-skill">CRUD Operations</li>
+                        <li class="about-skill">Authentication</li>
+                        <li class="about-skill">Authorization</li>
+                        <li class="about-skill">Wireframing</li>
+                    </ul>
+                </div>
+
+                <div class="about-skills-holder">
+                    <h4>
+                        Practices
+                        <span class="about-skills-holder-dropdown dropdown-caret">
+                            <i class="fa-solid fa-caret-down"></i>
+                        </span>
+                    </h4>
+
+                    <ul class="about-skills-list">
+                        <li class="about-skill">Test Driven Development</li>
+                        <li class="about-skill">Continuous Integration & Deployment</li>
+                        <li class="about-skill">Agile</li>
+                        <li class="about-skill">Pair Programming</li>
+                        <li class="about-skill">Code Reviews</li>
+                    </ul>
+                </div>
+
+                <div class="about-skills-holder">
+                    <h4>
+                        Soft Skills
+                        <span class="about-skills-holder-dropdown dropdown-caret">
+                            <i class="fa-solid fa-caret-down"></i>
+                        </span>
+                    </h4>
+
+                    <ul class="about-skills-list">
+                        <li class="about-skill">Communication</li>
+                        <li class="about-skill">Problem Solving</li>
+                        <li class="about-skill">Teamwork</li>
+                        <li class="about-skill">Time Management</li>
+                        <li class="about-skill">Adaptability</li>
+                        <li class="about-skill">Creativity</li>
+                        <li class="about-skill">Critical Thinking</li>
+                        <li class="about-skill">Empathy</li>
+                    </ul>
+                </div>
+            </section>
         </main>
 
         <footer id="main-footer">

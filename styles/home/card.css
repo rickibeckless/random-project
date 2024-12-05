@@ -19,10 +19,6 @@
     box-shadow: var(--box-shadow-md);
 }
 
-.random-card .random-content {
-    
-}
-
 .random-card .random-author {
     font-variant: small-caps;
     display: block;

@@ -85,14 +85,9 @@
     transition: background-color var(--transition-xf) ease, color var(--transition-xf) ease;
 }
 
-body {
-    background-color: var(--color-background);
-    min-height: calc(100dvh - calc(var(--height-header) + var(--height-footer)));
-}
-
 ::selection {
-    background-color: var(--color-text);
-    color: var(--color-background);
+    background-color: var(--invert-color-background);
+    color: var(--invert-color-text);
 }
 
 /* Global Color Scheme Styles */
@@ -100,14 +95,18 @@ body {
 @media (prefers-color-scheme: dark) {
     :root {
         --color-text: #eeecee;
+        --invert-color-text: #111311;
         --color-background: #3b3136;
+        --invert-color-background: #c4cec9;
         --secondary-color-background: #241c24;
     }
 }
 
 .dark-mode {
     --color-text: #eeecee;
+    --invert-color-text: #111311;
     --color-background: #3b3136;
+    --invert-color-background: #c4cec9;
     --secondary-color-background: #241c24;
 }
 
@@ -116,13 +115,17 @@ body {
 (prefers-color-scheme: no-preference) {
     :root {
         --color-text: #120008;
+        --invert-color-text: #edfff7;
         --color-background: #fafafa;
+        --invert-color-background: #050505;
         --secondary-color-background: #e8dfec;
     }
 }
 
 .light-mode {
     --color-text: #120008;
+    --invert-color-text: #edfff7;
     --color-background: #fafafa;
+    --invert-color-background: #050505;
     --secondary-color-background: #e8dfec;
 }

@@ -8,6 +8,7 @@ async function handleIAmChange() {
     const iAm = document.getElementById('i-am');
     const iAmData = await fetchIAm();
     let i = 0;
+    iAm.classList.add('fade-in-up');
     setInterval(() => {
         iAm.classList.remove('fade-in-up');
         void iAm.offsetWidth;
