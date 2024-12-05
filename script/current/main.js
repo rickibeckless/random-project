@@ -6,7 +6,6 @@ async function fetchDos() {
 
 async function populateTable() {
     const dos = await fetchDos();
-    const table = document.getElementById('dos-table');
     const tableBody = document.getElementById('dos-table-body');
     dos.forEach(doItem => {
         const row = document.createElement('tr');
@@ -16,7 +15,7 @@ async function populateTable() {
             <td>${doItem.description}</td>
             <td>
                 <ul>
-                    ${doItem['reference-links'].map(link => `<li><a href="${link}">${link}</a></li>`).join('')}
+                    ${doItem['reference-links'].map(link => `<li><a href="${link}" target="_blank" rel="noopener nofollow noreferrer" title="${link}">${link}</a></li>`).join('')}
                 </ul>
             </td>
         `;
