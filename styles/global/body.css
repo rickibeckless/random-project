@@ -6,12 +6,28 @@
     min-height: calc(100dvh - calc(var(--height-header) + var(--height-footer)));
 }
 
+/*
+<aside id="popup-message">
+    <div id="popup-message-content">
+        <button id="popup-message-close" title="Close Popup Message" type="button">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <p id="popup-message-text"></p>
+    </div>
+</aside>
+*/
+
 #popup-message {
     display: none;
 }
 
 #popup-message.active {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-sm);
+
     position: fixed;
     top: 50%;
     left: 50%;
@@ -22,6 +38,56 @@
     border: 1px solid var(--color-text);
     border-radius: var(--border-radius-md);
     z-index: var(--z-index-h);
+
+    animation: popup-message 0.5s ease;
+}
+
+#popup-message-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+#popup-message-close {
+    align-self: flex-end;
+
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-xs);
+
+    padding: var(--spacing-xxs) var(--spacing-xs);
+    border: 1px solid var(--color-text);
+    border-radius: var(--border-radius-md);
+    background-color: var(--color-text);
+    color: var(--secondary-color-background);
+    font-size: var(--font-size-md);
+
+    transition: all var(--transition-f) ease;
+}
+
+#popup-message-close:hover {
+    background-color: var(--color-text);
+    color: var(--secondary-color-background);
+    transform: scale(1.05);
+}
+
+#popup-message-close:active,
+#popup-message-close:focus {
+    transform: translate(1px, 1px);
+}
+
+@keyframes popup-message {
+    0% {
+        transform: translate(-50%, -100%);
+    }
+    100% {
+        transform: translate(-50%, -50%);
+    }
 }
 
 body.no-scroll {

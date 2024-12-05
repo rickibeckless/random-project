@@ -1,3 +1,5 @@
+// moved functionality to ./functions/send-email.js because Netlify is serverless
+
 import express from 'express';
 import dotenv from 'dotenv';
 import nodemailer from 'nodemailer';

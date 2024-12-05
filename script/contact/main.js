@@ -41,13 +41,13 @@ function handleContactFormSubmit() {
             });
     
             if (response.status === 200) {
-                handlePopupMessage('Email sent', 3000);
+                handlePopupMessage('Email sent 😆', 3000);
                 handleToggleContactForm();
             } else {
-                handlePopupMessage('Internal server error', 3000);
+                handlePopupMessage('Internal server error 🙍🏾‍♀️', 3000);
             };  
         } catch (error) {
-            handlePopupMessage('Internal server error', 3000);
+            handlePopupMessage('Internal server error 🙍🏾‍♀️', 3000);
         }
     });
 };
