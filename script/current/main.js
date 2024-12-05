@@ -7,9 +7,25 @@ async function fetchDos() {
 async function populateTable() {
     const dos = await fetchDos();
     const tableBody = document.getElementById('dos-table-body');
+    const priorityLevels = [
+        {
+            level: "high",
+            icon: "🔥"
+        },
+        {
+            level: "medium",
+            icon: "🌟"
+        },
+        {
+            level: "low",
+            icon: "🌱"
+        }
+    ];
+
     dos.forEach(doItem => {
         const row = document.createElement('tr');
         row.innerHTML = `
+            <td title="${doItem.priority}">${priorityLevels.find(level => level.level === doItem.priority).icon}</td>
             <td>${doItem.type}</td>
             <td>${doItem.title}</td>
             <td>${doItem.description}</td>

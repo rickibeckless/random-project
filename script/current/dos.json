@@ -2,6 +2,7 @@
     {
         "id": "dos-1",
         "type": "in-progress",
+        "priority": "medium",
         "title": "Continue working on Promptify",
         "description": "Continue working on small details within the app",
         "reference-links": ["https://promptify-ur5z.onrender.com/", "https://github.com/rickibeckless/FinalProject"]
@@ -9,6 +10,7 @@
     {
         "id": "dos-2",
         "type": "in-progress",
+        "priority": "low",
         "title": "Create Javascript Wordle Game",
         "description": "Currently creating a Wordle game using Javascript",
         "reference-links": []
@@ -16,6 +18,7 @@
     {
         "id": "dos-3",
         "type": "upcoming",
+        "priority": "medium",
         "title": "Create desktop application using Java",
         "description": "To aid in learning Java, I want to create a simple desktop application.",
         "reference-links": []
@@ -23,6 +26,7 @@
     {
         "id": "dos-4",
         "type": "in-progress",
+        "priority": "high",
         "title": "Continue education at Arkansas Tech University",
         "description": "I am currently enrolled in the Computer Science program at ATU.",
         "reference-links": ["https://www.atu.edu/"]
@@ -30,8 +34,25 @@
     {
         "id": "dos-5",
         "type": "in-progress",
+        "priority": "medium",
         "title": "Add Responsive Styling to rickib (this site)",
         "description": "Currently working on making this site responsive for mobile devices.",
         "reference-links": ["https://rickib.netlify.app/", "https://github.com/rickibeckless/random-project"]
+    },
+    {
+        "id": "dos-6",
+        "type": "upcoming",
+        "priority": "low",
+        "title": "Finish and Deploy StudyGo App",
+        "description": "While the majority of the app is complete, I need to finish some of the pages and some of the functionality.",
+        "reference-links": ["https://github.com/rickibeckless/StudyGo_V3"]
+    },
+    {
+        "id": "dos-7",
+        "type": "upcoming",
+        "priority": "low",
+        "title": "Revamp and Deploy Watch Stat Explorer App",
+        "description": "Created for a project in CodePath's WEB102 course, I want to revamp and deploy the app.",
+        "reference-links": ["https://github.com/rickibeckless/Data-Dashboard"]
     }
 ]

@@ -66,6 +66,77 @@
     transition: background-color var(--transition-f);
 }
 
+/*
+
+<div id="dos-footer">
+    <div class="table-key">
+        <h3>Key:</h3>
+        <ul>
+            <li><span class="key-dot">🔥</span> High Priority</li>
+            <li><span class="key-dot">🌟</span> Medium Priority</li>
+            <li><span class="key-dot">🌱</span> Low Priority</li>
+        </ul>
+    </div>
+    <p>For more information on my projects, please visit my <a href="/random-project">Random Project</a> page.</p>
+</div>
+
+*/
+
+#dos-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-lg);
+}
+
+.table-key {
+    display: flex;
+    gap: var(--spacing-xs);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.table-key h3 {
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-bold);
+}
+
+.table-key ul {
+    display: flex;
+    gap: var(--spacing-xs);
+}
+
+.table-key ul li {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xxs);
+}
+
+.key-dot {
+    font-size: var(--font-size-md);
+}
+
+#dos-footer p {
+    font-size: var(--font-size-sm);
+    text-align: center;
+}
+
+#dos-footer a {
+    transition: color var(--transition-xs);
+    color: var(--color-text);
+    font-variant: small-caps;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+}
+
+#dos-footer a:hover {
+    color: var(--color-candy-red);
+}
+
 @media (max-width: var(--breakpoint-md)) {
     #dos-table {
         font-size: var(--font-size-xs);
