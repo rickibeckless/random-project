@@ -9,8 +9,10 @@
         <link rel="manifest" href="./../assets/favicon/site.webmanifest">
         <title>current dos. | ricki.</title> <!-- Change the title of the page to appropriate name -->
         <link rel="stylesheet" href="./../styles/global/styles.css"> <!-- Link the global css stylesheet to each html page (modify path as needed Ricki!!) -->
+        <link rel="stylesheet" href="./../styles/current/styles.css">
         <script src="./../script/global/main.js" defer></script> <!-- Link the global js script to each html page -->
         <script src="./../script/global/nav.js" defer></script> <!-- Link the global js script to each html page -->
+        <script src="./../script/current/main.js" defer></script>
     </head>
     <body id="current"> <!-- Add an id attribute to the body element. -->
         <header id="main-header">
@@ -28,8 +30,22 @@
         </header>
         
         <main id="main-body">
-            <h2>What I'm Currently Doing</h2>
-            <p>The table will be here</p>
+            <div id="dos-header">
+                <h2>current dos.</h2>
+                <p>I am currently working on the following projects:</p>
+            </div>
+
+            <table id="dos-table">
+                <thead id="dos-table-head">
+                    <tr>
+                        <th>Type</th>
+                        <th>Title</th>
+                        <th>Description</th>
+                        <th>Links</th>
+                    </tr>
+                </thead>
+                <tbody id="dos-table-body"></tbody>
+            </table>
         </main>
 
         <footer id="main-footer">
