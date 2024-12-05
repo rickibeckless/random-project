@@ -53,12 +53,33 @@
 #contact-form-submit {
     cursor: pointer;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-xs);
+
     padding: var(--spacing-xxs) var(--spacing-xs);
     border: 1px solid var(--color-text);
     border-radius: var(--border-radius-md);
     background-color: var(--color-text);
     color: var(--secondary-color-background);
     font-size: var(--font-size-md);
+
+    transition: all var(--transition-f) ease;
+}
+
+.contact-form-toggle:hover,
+#contact-form-submit:hover {
+    background-color: var(--color-text);
+    color: var(--secondary-color-background);
+    transform: scale(1.05);
+}
+
+.contact-form-toggle:active,
+.contact-form-toggle:focus,
+#contact-form-submit:active,
+#contact-form-submit:focus {
+    transform: translate(1px, 1px);
 }
 
 #contact-form-modal {
