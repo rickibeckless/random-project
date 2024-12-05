@@ -12,7 +12,7 @@ const transporter = nodemailer.createTransport({
     }
 });
 
-handler = async (event, context) => {
+export const handler = async (event, context) => {
     if (event.httpMethod !== 'POST') {
         return {
             statusCode: 405,
@@ -44,5 +44,3 @@ handler = async (event, context) => {
         };
     };
 };
-
-export { handler };
