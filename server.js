@@ -3,6 +3,7 @@ import dotenv from 'dotenv';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import router from './router.js';
+import emailRouter from './emailRouter.js';
 
 dotenv.config({ path: './.env' });
 
@@ -18,6 +19,7 @@ app.use(express.json());
 app.use(express.static(publicDirectory));
 
 app.use('/', router);
+app.use("/api", emailRouter);
 
 app.listen(PORT, () => {
     console.log(`Server is listening on: ${PRO_URL}`);

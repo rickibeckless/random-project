@@ -32,7 +32,7 @@ function handleContactFormSubmit() {
         const formObject = Object.fromEntries(formData);
 
         try {
-            const response = await fetch('/send-email', {
+            const response = await fetch('/api/send-email', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
