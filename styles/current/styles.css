@@ -63,7 +63,6 @@
 
 #dos-table tbody tr:hover {
     background-color: var(--color-brown-silver);
-    cursor: pointer;
     transition: background-color var(--transition-f);
 }
 

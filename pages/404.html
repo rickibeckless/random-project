@@ -9,6 +9,7 @@
         <link rel="manifest" href="./../assets/favicon/site.webmanifest">
         <title>404 | ricki.</title> <!-- Change the title of the page to appropriate name -->
         <link rel="stylesheet" href="../styles/global/styles.css"> <!-- Link the global css stylesheet to each html page (modify path as needed Ricki!!) -->
+        <link rel="stylesheet" href="../styles/not-found/styles.css">
         <script src="../script/global/main.js" defer></script> <!-- Link the global js script to each html page -->
         <script src="../script/global/nav.js" defer></script> <!-- Link the global js script to each html page -->
     </head>
@@ -28,8 +29,19 @@
         </header>
 
         <main id="main-body">
-            <h2>404</h2>
-            <p>Page not found.</p>
+            <section class="not-found-content">
+                <div class="error-header">
+                    <h1>404</h1>
+                    <h2>Page Not Found</h2>
+                </div>
+                <p>
+                    Oops! The page you're looking for either doesn't exist, requires higher authorization, or may have been moved or deleted.
+                </p>
+                <p>
+                    If you think this is an error, feel free to <a href="/contact" class="not-found-link">contact me and let me know</a>!
+                </p>
+                <a href="/" class="not-found-link">Go Back Home</a>
+            </section>
         </main>
 
         <footer id="main-footer">

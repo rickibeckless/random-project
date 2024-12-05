@@ -1,0 +1,56 @@
+#about-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-lg);
+}
+
+#about-paragraphs-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    padding: var(--spacing-lg);
+    background-color: var(--color-text);
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--box-shadow-sm);
+    text-align: center;
+
+    width: 60%;
+    margin: 0 auto;
+}
+
+.about-paragraph p {
+    font-size: var(--font-size-md);
+    color: var(--color-background);
+    margin: var(--spacing-xs) 0;
+    line-height: 1.5;
+}
+
+#i-am {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+    color: var(--secondary-color-background);
+    opacity: 0;
+    display: inline-block;
+    transform: translateY(5px);
+    transition: opacity var(--transition-f), transform var(--transition-f);
+}
+
+@keyframes fadeInSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#i-am.fade-in-up {
+    animation: fadeInSlideUp 1s ease-in-out forwards;
+}
