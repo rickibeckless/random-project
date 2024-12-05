@@ -26,5 +26,12 @@
         "title": "Continue education at Arkansas Tech University",
         "description": "I am currently enrolled in the Computer Science program at ATU.",
         "reference-links": ["https://www.atu.edu/"]
+    },
+    {
+        "id": "dos-5",
+        "type": "in-progress",
+        "title": "Add Responsive Styling to rickib (this site)",
+        "description": "Currently working on making this site responsive for mobile devices.",
+        "reference-links": ["https://rickib.netlify.app/", "https://github.com/rickibeckless/random-project"]
     }
 ]
