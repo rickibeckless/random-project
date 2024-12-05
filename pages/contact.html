@@ -10,9 +10,11 @@
         <title>find ricki.</title> <!-- Change the title of the page to appropriate name -->
         <link rel="stylesheet" href="../styles/global/styles.css"> <!-- Link the global css stylesheet to each html page (modify path as needed Ricki!!) -->
         <link rel="stylesheet" href="../styles/contact/find-me.css">
+        <link rel="stylesheet" href="../styles/contact/styles.css">
         <script src="https://kit.fontawesome.com/6fdb255b28.js" crossorigin="anonymous"></script>
         <script src="../script/global/main.js" defer></script> <!-- Link the global js script to each html page -->
         <script src="../script/global/nav.js" defer></script> <!-- Link the global js script to each html page -->
+        <script src="../script/contact/main.js" defer></script>
     </head>
     <body id="contact"> <!-- Add an id attribute to the body element. -->
         <header id="main-header">
@@ -31,8 +33,17 @@
 
         <main id="main-body">
             <section id="find-me">
-                <h2 class="section-header">Find Me</h2>
-                <p>The form will be here.</p>
+                <div id="find-me-header">
+                    <h2>find ricki.</h2>
+                    <p>Here are some places you can find me on the web.</p>
+
+                    <div class="contact-options">
+                        <p>Need to get in touch? <br>Send me a message!</p>
+                        <button class="contact-form-toggle" type="button" title="Open Contact Form">
+                            <i class="fa-solid fa-envelope"></i>
+                        </button>
+                    </div>
+                </div>
                 <div id="find-me-social-holder" class="section-div">
                     <div class="find-me-social">
                         <a href="https://github.com/rickibeckless" class="find-me-links" target="_blank" rel="noopener nofollow noreferrer" title="Ricki Beckless GitHub">
@@ -63,8 +74,52 @@
                         <a href="https://www.freecodecamp.org/rickibeckless" class="find-me-links-description">https://www.freecodecamp.org/rickibeckless</a>
                     </div>
                 </div>
+                <div id="document-overlay"></div>
+                <section id="contact-form-section">
+                    <div id="contact-form-modal" class="section-div">
+                        <button class="contact-form-toggle" type="button" title="Close Contact Form">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                        <h3>Contact Form</h3>
+                        <form id="contact-form">
+                            <div class="contact-form-group">
+                                <label for="contact-form-name">Name:</label>
+                                <input type="text" id="contact-form-name" name="name" required>
+                            </div>
+
+                            <div class="contact-form-group">
+                                <label for="contact-form-email">Email:</label>
+                                <input type="email" id="contact-form-email" name="email" required>
+                            </div>
+
+                            <div class="contact-form-group">
+                                <label for="contact-form-subject">Subject:</label>
+                                <input type="text" id="contact-form-subject" name="subject" required>
+                            </div>
+
+                            <div class="contact-form-group">
+                                <label for="contact-form-message">Message:</label>
+                                <textarea id="contact-form-message" name="message" required></textarea>    
+                            </div>
+
+                            <button id="contact-form-submit" type="submit" class="contact-form-toggle">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span>Send</span>
+                            </button>
+                        </form>
+                    </div>
+                </section>
             </section>
         </main>
+
+        <aside id="popup-message">
+            <div id="popup-message-content">
+                <button id="popup-message-close" title="Close Popup Message" type="button">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <p id="popup-message-text"></p>
+            </div>
+        </aside>
 
         <footer id="main-footer">
             <p id="footer-cr-statement">

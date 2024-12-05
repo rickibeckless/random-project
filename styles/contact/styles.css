@@ -1,0 +1,108 @@
+#contact-form-section,
+#document-overlay {
+    display: none;
+}
+
+#contact-form-section.active {
+    display: flex;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--color-background);
+    color: var(--color-text);
+    padding: var(--spacing-md);
+    border: 1px solid var(--color-text);
+    border-radius: var(--border-radius-md);
+    z-index: var(--z-index-h);
+}
+
+#document-overlay.active {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: var(--z-index-md);
+}
+
+#find-me-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-xl);
+}
+
+#find-me-header .contact-options {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+
+    background-color: var(--secondary-color-background);
+    border-radius: var(--border-radius-md);
+
+    padding: var(--spacing-xs) var(--spacing-sm);
+    font-variant: small-caps;
+}
+
+.contact-form-toggle {
+    cursor: pointer;
+
+    padding: var(--spacing-xxs) var(--spacing-xs);
+    border: 1px solid var(--color-text);
+    border-radius: var(--border-radius-md);
+    background-color: var(--color-text);
+    color: var(--secondary-color-background);
+    font-size: var(--font-size-md);
+}
+
+#contact-form-modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    min-height: 55dvh;
+    max-height: 80vh;
+    width: 35vw;
+}
+
+#contact-form-modal .contact-form-toggle {
+    align-self: flex-end;
+}
+
+#contact-form-modal h3 {
+    text-align: center;
+}
+
+#contact-form-modal #contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+#contact-form-modal #contact-form .contact-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xxs);
+}
+
+#contact-form-modal #contact-form .contact-form-group label {
+    font-size: var(--font-size-sm);
+}
+
+#contact-form-modal #contact-form .contact-form-group input,
+#contact-form-modal #contact-form .contact-form-group textarea {
+    padding: var(--spacing-xs);
+    border: 1px solid var(--color-text);
+    border-radius: var(--border-radius-sm);
+}
+
+#contact-form-modal #contact-form .contact-form-group textarea {
+    resize: vertical;
+    min-height: var(--font-size-xxl);
+    max-height: 20vh;
+}

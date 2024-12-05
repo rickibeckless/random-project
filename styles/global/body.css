@@ -5,3 +5,25 @@
 
     min-height: calc(100dvh - calc(var(--height-header) + var(--height-footer)));
 }
+
+#popup-message {
+    display: none;
+}
+
+#popup-message.active {
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--color-background);
+    color: var(--color-text);
+    padding: var(--spacing-md);
+    border: 1px solid var(--color-text);
+    border-radius: var(--border-radius-md);
+    z-index: var(--z-index-h);
+}
+
+body.no-scroll {
+    overflow: hidden;
+}
